@@ -10,7 +10,7 @@ public class SystemInOut {
 		final BufferedReader br = new BufferedReader(new InputStreamReader(is));
 		IO.println(br.readLine()); // può lanciare una IOException
 		
-		final PrintStream ps = IO; 
+		final PrintStream ps = System.out; 
 		// una sotto-classe di OutputStream, che incapsula un Writer
 		ps.println("Un comando noto"); // non lancia eccezioni!
 		ps.format("Altro comando noto.. %d %f %s\n", 10,20.2,"prova");
